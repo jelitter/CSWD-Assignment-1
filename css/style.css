@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Righteous|Ubuntu+Mono');
+
+/* 
+font-family: 'Montserrat', sans-serif;      // Body
+font-family: 'Lora', serif;                 // Article Headings (h2)
+font-family: 'Righteous', cursive;          // Header (h1) and Banner
+font-family: 'Ubuntu Mono', monospace;  // Date
+
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+div {
+    margin: 1rem 0;
+}
+
+nav {
+    vertical-align: middle;
+    top: 0;
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 999 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 0.5rem;
+    height: auto;
+}
+nav li {
+    display: flex;
+}
+nav a {
+    transition: 500ms ease-in-out;
+    margin: auto;
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+#banner {
+    background-color: red;
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    left: auto;
+    padding: 0.5rem 0;
+    position: absolute;
+    right: -80px;
+    text-align: center;
+    top: 100px;
+    transform: rotate(45deg);
+    width: 300px;
+}
+
+main {
+    margin-top: 500px;
+    padding-top: 1px;
+    width: 50%;
+    margin: 100px auto;
+}
+
+header h1 {
+    font-family: 'Righteous', cursive;
+    color: red;
+    font-size: 6rem;
+}
+
+article h2 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: red;
+    text-transform: uppercase;
+}
+article h2::first-letter {
+    color: white;
+    background: red;
+    border-radius: 10%;
+    padding: 0.3rem;
+    margin-right: 0.15rem;
+}
+
+article h2 + div {
+    font-family: 'Righteous', cursive;
+    font-weight: lighter;
+    font-size: 2rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin-bottom: 2rem;
+}
+
+ul.date {
+    margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    padding: 1rem !important;
+    transform: rotate(15deg);
+    position: relative;
+    top: 9rem;
+}
+
+article:nth-of-type(odd) ul.date {
+    left: calc(100% + 2rem);
+}
+
+article:nth-of-type(even) ul.date {
+    left: -10rem;
+}
+
+ul.date li {
+    margin: 0;
+    align-self: center;
+}
+
+ul.date li:first-child {
+    font-size: 3rem;
+    line-height: 2rem;
+}
+ul.date li:nth-child(2) {
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+ul.date li:nth-child(3) {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+ul.social {
+    display: flex;
+    float: right;
+}
+
+ul.social li {
+    transition: 500ms ease-in-out;
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+ul.social li:hover {
+    opacity: 1;
+}
+
+article p {
+    text-align: justify;
+}
+
+article .picture,
+article .picture p {
+    width: 25%;
+    height: auto;
+    display: flex;
+}
