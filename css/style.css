@@ -9,170 +9,219 @@ font-family: 'Ubuntu Mono', monospace;  // Date
 */
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 div {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 nav {
-    vertical-align: middle;
-    top: 0;
-    position: fixed;
-    background: white;
-    width: 100%;
-    z-index: 999 !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  top: 0;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 999 !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    justify-content: space-evenly;
-    width: 70%;
-    margin: auto;
-    display: flex;
-    padding: 0.5rem;
-    height: auto;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  padding: 0.5rem;
+  height: auto;
 }
 nav li {
-    display: flex;
+  display: flex;
 }
 nav a {
-    transition: 500ms ease-in-out;
-    margin: auto;
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-    border-radius: 0.5rem;
+  transition: 500ms ease-in-out;
+  margin: auto;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0.5rem;
 }
 
 nav a:hover {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 }
 
 #banner {
-    background-color: red;
-    color: white;
-    font-family: 'Righteous', cursive;
-    font-size: 2rem;
-    left: auto;
-    padding: 0.5rem 0;
-    position: absolute;
-    right: -80px;
-    text-align: center;
-    top: 100px;
-    transform: rotate(45deg);
-    width: 300px;
+  background-color: red;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+  left: auto;
+  padding: 0.5rem 0;
+  position: absolute;
+  right: -80px;
+  text-align: center;
+  top: 100px;
+  transform: rotate(45deg);
+  width: 300px;
 }
 
 main {
-    margin-top: 500px;
-    padding-top: 1px;
-    width: 50%;
-    margin: 100px auto;
+  margin-top: 500px;
+  padding-top: 1px;
+  width: 50%;
+  margin: 100px auto;
 }
 
 header h1 {
-    font-family: 'Righteous', cursive;
-    color: red;
-    font-size: 6rem;
+  font-family: 'Righteous', cursive;
+  color: red;
+  font-size: 6rem;
 }
 
 article h2 {
-    font-family: 'Lora', serif;
-    font-size: 3rem;
-    color: red;
-    text-transform: uppercase;
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  color: red;
+  text-transform: uppercase;
 }
 article h2::first-letter {
-    color: white;
-    background: red;
-    border-radius: 10%;
-    padding: 0.3rem;
-    margin-right: 0.15rem;
+  color: white;
+  background: red;
+  border-radius: 10%;
+  padding: 0.3rem;
+  margin-right: 0.15rem;
 }
 
 article h2 + div {
-    font-family: 'Righteous', cursive;
-    font-weight: lighter;
-    font-size: 2rem;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-    margin-bottom: 2rem;
+  font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  margin-bottom: 2rem;
 }
 
 ul.date {
-    margin: 0;
-    font-family: 'Ubuntu Mono', monospace;
-    text-align: center;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background: black;
-    color: white;
-    padding: 1rem !important;
-    transform: rotate(15deg);
-    position: relative;
-    top: 9rem;
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  text-align: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  padding: 1rem !important;
+  transform: rotate(15deg);
+  position: relative;
+  top: 9rem;
 }
 
 article:nth-of-type(odd) ul.date {
-    left: calc(100% + 2rem);
+  left: calc(100% + 2rem);
 }
 
 article:nth-of-type(even) ul.date {
-    left: -10rem;
+  left: -10rem;
 }
 
 ul.date li {
-    margin: 0;
-    align-self: center;
+  margin: 0;
+  align-self: center;
 }
 
 ul.date li:first-child {
-    font-size: 3rem;
-    line-height: 2rem;
+  font-size: 3rem;
+  line-height: 2rem;
 }
 ul.date li:nth-child(2) {
-    font-size: 2rem;
-    line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.5rem;
 }
 ul.date li:nth-child(3) {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 ul.social {
-    display: flex;
-    float: right;
+  display: flex;
+  float: right;
 }
 
 ul.social li {
-    transition: 500ms ease-in-out;
-    opacity: 0.5;
-    margin-left: 0.5rem;
+  transition: 500ms ease-in-out;
+  opacity: 0.5;
+  margin-left: 0.5rem;
 }
 ul.social li:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 article p {
-    text-align: justify;
+  text-align: justify;
 }
 
-article .picture,
-article .picture p {
-    width: 25%;
-    height: auto;
-    display: flex;
+article .picture {
+  width: 50%;
+  margin: 0;
+}
+
+article:nth-of-type(odd) .picture {
+  float: left;
+  margin: 0 2rem 1rem 0;
+}
+
+article:nth-of-type(even) .picture {
+  float: right;
+  margin: 0 0 1rem 2rem;
+}
+
+div.picture {
+  border-radius: 1rem;
+  border: solid 6px gray;
+  line-height: 0;
+  margin: 0;
+  overflow-y: hidden;
+  position: relative;
+  width: 50%;
+}
+.picture img {
+  width: 100%;
+}
+
+div.caption {
+  align-items: center;
+  background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+  border: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  transition: 500ms ease-in-out;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.picture:hover .caption {
+  top: 0%;
+}
+
+.caption p {
+  color: white;
+  font-size: 3rem;
+  line-height: 1.3em !important;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
