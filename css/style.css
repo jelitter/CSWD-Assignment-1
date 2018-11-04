@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Montserrat|Righteous|Ubuntu+Mono');
 
 /* 
-font-family: 'Montserrat', sans-serif;      // Body
-font-family: 'Lora', serif;                 // Article Headings (h2)
-font-family: 'Righteous', cursive;          // Header (h1) and Banner
-font-family: 'Ubuntu Mono', monospace;  // Date
-
+  font-family: 'Montserrat', sans-serif;  // Body, Footer
+  font-family: 'Lora', serif;             // Article Headings (h2)
+  font-family: 'Righteous', cursive;      // Header (h1) and Banner
+  font-family: 'Ubuntu Mono', monospace;  // Date
 */
 
 body {
@@ -21,7 +20,7 @@ ul {
 }
 
 div {
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 
 nav {
@@ -39,7 +38,7 @@ nav ul {
   width: 70%;
   margin: auto;
   display: flex;
-  padding: 0.5rem;
+  padding: 0.5em;
   height: auto;
 }
 nav li {
@@ -85,12 +84,12 @@ main {
 header h1 {
   font-family: 'Righteous', cursive;
   color: red;
-  font-size: 6rem;
+  font-size: 6em;
 }
 
 article h2 {
   font-family: 'Lora', serif;
-  font-size: 3rem;
+  font-size: 2.5em;
   color: red;
   text-transform: uppercase;
 }
@@ -155,12 +154,14 @@ ul.date li:nth-child(3) {
 ul.social {
   display: flex;
   float: right;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 ul.social li {
   transition: 500ms ease-in-out;
   opacity: 0.5;
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
 }
 ul.social li:hover {
   opacity: 1;
@@ -170,19 +171,14 @@ article p {
   text-align: justify;
 }
 
-article .picture {
-  width: 50%;
-  margin: 0;
-}
-
 article:nth-of-type(odd) .picture {
   float: left;
-  margin: 0 2rem 1rem 0;
+  margin: 0 2em 1em 0;
 }
 
 article:nth-of-type(even) .picture {
   float: right;
-  margin: 0 0 1rem 2rem;
+  margin: 0 0 1em 2em;
 }
 
 div.picture {
@@ -192,7 +188,7 @@ div.picture {
   margin: 0;
   overflow-y: hidden;
   position: relative;
-  width: 50%;
+  width: 30%;
 }
 .picture img {
   width: 100%;
@@ -219,9 +215,31 @@ div.caption {
 
 .caption p {
   color: white;
-  font-size: 3rem;
+  font-size: 2em;
   line-height: 1.3em !important;
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+footer {
+  margin-top: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  display: inline-block;
+}
+
+.taglabel {
+  color: red;
+}
+
+.tag {
+  margin-left: 0.5em;
+}
+
+footer.main {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
 }
