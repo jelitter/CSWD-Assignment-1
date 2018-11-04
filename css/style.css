@@ -40,7 +40,7 @@ nav ul {
   width: 70%;
   margin: auto;
   display: flex;
-  padding: 0.5em;
+  /* padding: 0.5em; */
   height: auto;
 }
 nav li {
@@ -48,13 +48,14 @@ nav li {
 }
 nav a {
   transition: 500ms ease-in-out;
-  margin: auto;
   text-decoration: none;
-  padding: 1rem;
+  margin: 0.5em 0;
+  padding: 1em;
   color: black;
   font-weight: bold;
-  font-size: 1rem;
-  border-radius: 0.5rem;
+  font-size: 1em;
+  border-radius: 0.5em;
+  line-height: 1em;
 }
 
 nav a:hover {
@@ -62,18 +63,25 @@ nav a:hover {
 }
 
 #banner {
+  transition: 500ms ease-in-out;
   background-color: red;
   color: white;
   font-family: 'Righteous', cursive;
-  font-size: 2rem;
+  font-size: 2em;
+  height: 2em;
   left: auto;
-  padding: 0.5rem 0;
+  line-height: 2em;
+  margin: 0;
   position: absolute;
-  right: -80px;
+  right: -2.24em;
   text-align: center;
-  top: 100px;
+  top: calc(4em - 4px);
   transform: rotate(45deg);
-  width: 300px;
+  width: 10em;
+}
+
+body {
+  font-size: 20px;
 }
 
 main {
@@ -128,11 +136,11 @@ ul.date {
 }
 
 article:nth-of-type(odd) ul.date {
-  left: calc(100% + 2rem);
+  left: calc(100% + 2em);
 }
 
 article:nth-of-type(even) ul.date {
-  left: -10rem;
+  left: -10em;
 }
 
 ul.date li {
